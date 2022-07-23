@@ -1,4 +1,4 @@
-package demo;
+package demo.week3loop;
 
 import java.util.Arrays;
 
