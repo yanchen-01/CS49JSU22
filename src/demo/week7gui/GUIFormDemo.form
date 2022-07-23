@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="demo.week7gui.GUIFormDemo">
+  <grid id="27dc6" binding="panel" layout-manager="GridLayoutManager" row-count="8" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="10" left="10" bottom="10" right="10"/>
+    <constraints>
+      <xy x="20" y="20" width="251" height="283"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <component id="2595e" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <labelFor value="e0f95"/>
+          <text value="Principle ($): "/>
+        </properties>
+      </component>
+      <component id="e0f95" class="javax.swing.JTextField" binding="principle">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="cd814" class="javax.swing.JLabel" binding="rate">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="-1" height="30"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Annual Interest Rate: 10.0%"/>
+          <verticalAlignment value="3"/>
+          <verticalTextPosition value="0"/>
+        </properties>
+      </component>
+      <component id="5eed8" class="javax.swing.JSlider" binding="rateSlider">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <maximum value="200"/>
+          <value value="100"/>
+          <valueIsAdjusting value="true"/>
+        </properties>
+      </component>
+      <component id="9aeb2" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="-1" height="30"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Loan Term: "/>
+          <verticalAlignment value="3"/>
+        </properties>
+      </component>
+      <component id="356db" class="javax.swing.JRadioButton" binding="r15">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <selected value="true"/>
+          <text value="15 years"/>
+        </properties>
+      </component>
+      <component id="cb4e1" class="javax.swing.JRadioButton" binding="r20">
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="20 years"/>
+        </properties>
+      </component>
+      <component id="def11" class="javax.swing.JRadioButton" binding="r30">
+        <constraints>
+          <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="30 years"/>
+        </properties>
+      </component>
+      <component id="4358b" class="javax.swing.JCheckBox" binding="checkBox">
+        <constraints>
+          <grid row="5" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="-1" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Include taxes and fees (0.1%)" noi18n="true"/>
+        </properties>
+      </component>
+      <component id="3c9c3" class="javax.swing.JButton" binding="calBtn">
+        <constraints>
+          <grid row="6" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Calculate"/>
+        </properties>
+      </component>
+      <component id="d1f9b" class="javax.swing.JLabel" binding="result">
+        <constraints>
+          <grid row="7" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Click Calculate to see monthly payment"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+  <buttonGroups>
+    <group name="group">
+      <member id="356db"/>
+      <member id="cb4e1"/>
+      <member id="def11"/>
+    </group>
+  </buttonGroups>
+</form>
