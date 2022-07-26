@@ -43,5 +43,6 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="Maven: com.github.lgooddatepicker:LGoodDatePicker:11.2.1" level="project" />
   </component>
 </module>
